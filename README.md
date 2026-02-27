@@ -98,12 +98,3 @@ This project is open source and available for personal use.
 ✔ Professional GitHub look  
 ✔ Easy to read & maintain  
 
----
-
-If you want next:
-- 🌐 **Add Vercel deployment section**
-- 🎨 **Tailwind-only version**
-- 🇰🇭 **Khmer README**
-- 🧑‍💻 **Backend + Full-stack portfolio README**
-
-Just tell me what you want next 💪
