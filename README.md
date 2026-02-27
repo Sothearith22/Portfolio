@@ -1,16 +1,73 @@
-# React + Vite
+# 🚀 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website built with **React (JSX)**.  
+It showcases my skills, projects, and contact information in a modern and responsive design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Tech Stack
 
-## React Compiler
+- **React** (JSX)
+- **React Router DOM**
+- **CSS / Tailwind CSS** (optional)
+- **JavaScript (ES6+)**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
+src/
+├── assets/
+│   └── images/
+│       └── profile.jpg
+│
+├── components/
+│   ├── Navbar.jsx
+│   ├── Section.jsx
+│   └── ProjectCard.jsx
+│
+├── data/
+│   └── projects.js
+│
+├── pages/
+│   ├── Home.jsx
+│   ├── About.jsx
+│   ├── Skills.jsx
+│   ├── Projects.jsx
+│   └── Contact.jsx
+│
+├── hooks/
+│   └── useTheme.js
+│
+├── App.jsx
+├── main.jsx
+└── index.css
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🌐 Pages
+
+- **Home** – Introduction and short summary
+- **About** – Skills, experience, and background
+- **Projects** – My recent projects and works
+- **Contact** – Ways to get in touch with me
+
+---
+
+## 🚦 Getting Started
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/Sothearith22/portfolio.git
+npm install
+npm run dev
+http://localhost:5173
+
+---
+
+If you want, I can also:
+- ✨ Customize this README with **your name**
+- 🌐 Add **Vercel / Netlify deploy guide**
+- 🎨 Make a **Tailwind-specific README**
+- 📘 Write README in **simple English or Khmer**
+
+Just tell me 👍
