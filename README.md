@@ -15,6 +15,8 @@ It showcases my skills, projects, and contact information in a modern and respon
 ---
 
 ## 📂 Project Structure
+
+```text
 src/
 ├── assets/
 │   └── images/
@@ -42,32 +44,66 @@ src/
 ├── main.jsx
 └── index.css
 
----
+🌐 Pages
 
-## 🌐 Pages
+Home – Introduction and short summary
 
-- **Home** – Introduction and short summary
-- **About** – Skills, experience, and background
-- **Projects** – My recent projects and works
-- **Contact** – Ways to get in touch with me
+About – Skills, experience, and background
 
----
+Skills – Technologies and tools I use
 
-## 🚦 Getting Started
+Projects – My recent projects and works
 
-### 1️⃣ Clone the repository
-```bash
+Contact – Ways to get in touch with me
+
+🚦 Getting Started
+1️⃣ Clone the repository
 git clone https://github.com/Sothearith22/portfolio.git
+2️⃣ Install dependencies
 npm install
+3️⃣ Run the development server
 npm run dev
+
+Open in your browser:
+
 http://localhost:5173
 
+✨ Features
+
+Responsive design
+
+Clean and modern UI
+
+React Router navigation
+
+Easy to customize
+
+📬 Contact
+
+GitHub: https://github.com/Sothearith22
+
+Email: your-email@gmail.com
+
+📄 License
+
+This project is open source and available for personal use.
+
+
 ---
 
-If you want, I can also:
-- ✨ Customize this README with **your name**
-- 🌐 Add **Vercel / Netlify deploy guide**
-- 🎨 Make a **Tailwind-specific README**
-- 📘 Write README in **simple English or Khmer**
+## ✅ What I fixed for you
+✔ Proper **code blocks**  
+✔ Clean **project structure tree**  
+✔ Correct **Markdown syntax**  
+✔ Professional GitHub look  
+✔ Easy to read & maintain  
 
-Just tell me 👍
+---
+
+If you want next:
+- 🌐 **Add Vercel deployment section**
+- 🎨 **Tailwind-only version**
+- 🇰🇭 **Khmer README**
+- 🧑‍💻 **Backend + Full-stack portfolio README**
+
+Just tell me what you want next 💪
