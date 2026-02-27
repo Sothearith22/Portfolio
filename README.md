@@ -57,8 +57,10 @@ Projects – My recent projects and works
 Contact – Ways to get in touch with me
 
 🚦 Getting Started
+
 1️⃣ Clone the repository
 git clone https://github.com/Sothearith22/portfolio.git
+
 2️⃣ Install dependencies
 npm install
 3️⃣ Run the development server
@@ -82,7 +84,7 @@ Easy to customize
 
 GitHub: https://github.com/Sothearith22
 
-Email: your-email@gmail.com
+Email: rithrith8442@gmail.com
 
 📄 License
 
