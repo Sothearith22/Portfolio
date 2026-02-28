@@ -1,12 +1,13 @@
 import React from 'react'
-import Navbar from './components/common/Navbar'
+import Navbar from './components/Navbar'
 import { Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
+
 import About from './pages/About'
-import { Notfound } from './pages/Notfound'
+import { Notfound } from './pages/NotFound'
 import Contact from './pages/Contact'
 import Projects from './pages/Projects'
 import Skills from './pages/Skills'
+import Home from './pages/Home'
 
 const App = () => {
   return (
@@ -14,13 +15,13 @@ const App = () => {
       <Navbar/>
         <Routes>
           {/* Route 404 */}
-          <Route path='*'element={<Notfound/>}/>
+          {/* <Route path='*'element={<Notfound/>}/> */}
 
             <Route path="/" element={<Home/>}/>
-            <Route path='/about' element={<About/>}/>
+            {/* <Route path='/about' element={<About/>}/>
             <Route path='/contact' element={<Contact/>}/>
             <Route path='/projects'element={<Projects/>}/>
-            <Route path='/skills' element={<Skills/>}/>
+            <Route path='/skills' element={<Skills/>}/> */}
         </Routes>
     </div>
   )
