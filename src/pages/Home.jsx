@@ -1,12 +1,15 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+import Section from '../components/Section'
+import Skills from './Skills'
+
 
 
 
 const Home = () => {
   return (
     <div>
-    <Navbar/>
+        <Section/>
+        <Skills/>
     </div>
     
   )
