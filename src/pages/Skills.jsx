@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 import skills from "../data/skills";
 
 const Skills = () => {
@@ -33,7 +33,7 @@ const Skills = () => {
                   const Icon = skill.icon;
 
                   return (
-                    <motion.div
+                    <Motion.div
                       key={index}
                       initial={{ opacity: 0, y: 40 }}
                       whileInView={{ opacity: 1, y: 0 }}
@@ -63,7 +63,7 @@ const Skills = () => {
 
                           {/* PROGRESS BAR */}
                           <div className="w-full bg-white/10 rounded-full h-2 mt-2 overflow-hidden">
-                            <motion.div
+                            <Motion.div
                               initial={{ width: 0 }}
                               whileInView={{ width: `${skill.level}%` }}
                               viewport={{ once: true }}
@@ -74,7 +74,7 @@ const Skills = () => {
                           </div>
                         </div>
                       </div>
-                    </motion.div>
+                    </Motion.div>
                   );
                 })}
               </div>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 import profileImg from "../assets/images/profile.jpg";
 // import cvFile from "../assets/files/Sothearith-CV.pdf";
 
@@ -49,7 +49,7 @@ const Section = () => {
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
         {/* LEFT CONTENT */}
-        <motion.div
+        <Motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -72,7 +72,7 @@ const Section = () => {
           {/* BUTTONS */}
           <div className="flex gap-4 mt-8 flex-wrap">
             {/* Download CV */}
-            <motion.a
+            <Motion.a
               // href={cvFile}
               download
               whileHover={{ scale: 1.05 }}
@@ -80,17 +80,17 @@ const Section = () => {
               className="px-6 py-3 rounded-xl bg-gradient-to-r from-purple-500 to-indigo-500 text-white font-semibold shadow-lg"
             >
               Download CV
-            </motion.a>
+            </Motion.a>
 
             {/* View Projects */}
-            <motion.a
+            <Motion.a
               // href="#projects"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-6 py-3 rounded-xl border border-purple-500 text-purple-400 font-semibold hover:bg-purple-500/10"
             >
               View Projects
-            </motion.a>
+            </Motion.a>
           </div>
 
           {/* STATS */}
@@ -100,7 +100,7 @@ const Section = () => {
               { value: "8+", label: "Projects" },
               { value: "15K+", label: "Happy Clients" },
             ].map((item) => (
-              <motion.div
+              <Motion.div
                 key={item.label}
                 whileHover={{ scale: 1.05 }}
                 className="bg-white/5 border border-white/10 rounded-xl px-6 py-4 text-center"
@@ -109,13 +109,13 @@ const Section = () => {
                   {item.value}
                 </h2>
                 <p className="text-sm text-gray-400">{item.label}</p>
-              </motion.div>
+              </Motion.div>
             ))}
           </div>
-        </motion.div>
+        </Motion.div>
 
         {/* RIGHT IMAGE */}
-        <motion.div
+        <Motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -129,7 +129,7 @@ const Section = () => {
               className="relative w-72 h-72 md:w-80 md:h-80 rounded-full object-cover border-4 border-purple-500"
             />
           </div>
-        </motion.div>
+        </Motion.div>
 
       </div>
     </section>
