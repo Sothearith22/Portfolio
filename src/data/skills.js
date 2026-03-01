@@ -19,14 +19,18 @@ import {
     SiMysql,
     SiPostgresql,
     SiSpring,
-    // SiXampp,
+    SiXampp,
     SiGithub,
+    SiC,
+    SiCplusplus,
 } from "react-icons/si";
 
 const skills = [
     {
         title: "Programming",
         skills: [
+            { name: "C++", icon: SiCplusplus, level: 75, color: "text-sky-400" },
+            { name: "C", icon: SiC, level: 90, color: "text-blue-500" },
             { name: "Java", icon: FaJava, level: 70, color: "text-orange-500" },
             { name: "Python", icon: FaPython, level: 65, color: "text-yellow-200" }
         ]
@@ -52,16 +56,17 @@ const skills = [
             { name: "Spring", icon: SiSpring, level: 50, color: "text-green-600" },
             { name: "MySQL", icon: SiMysql, level: 75, color: "text-blue-500" },
             { name: "PostgreSQL", icon: SiPostgresql, level: 70, color: "text-blue-400" },
-           
+            {name: "MySQL Workbench", icon: SiMysql, level: 75, color: "text-blue-600",}
+
         ],
     },
     {
         title: "Tools",
         skills: [
             { name: "Git", icon: FaGitAlt, level: 80, color: "text-orange-600" },
-            { name: "Docker", icon: FaDocker, level: 65, color: "text-sky-500" },
-            // { name: "XAMPP", icon: SiXampp, level: 85, color: "text-orange-500" },
-            { name: "GitHub", icon: SiGithub, level: 70, color: "text-black" } 
+            { name: "XAMPP", icon: SiXampp, level: 85, color: "text-orange-500" },
+            { name: "GitHub", icon: SiGithub, level: 70, color: "text-black" },
+            { name: "Docker", icon: FaDocker, level: 65, color: "text-sky-500" }
         ],
     },
 ];
