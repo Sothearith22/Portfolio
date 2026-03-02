@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { motion as Motion } from "framer-motion";
 import profileImg from "../assets/images/profile.jpg";
-// import cvFile from "../assets/files/Sothearith-CV.pdf";
+import cvFile from "../assets/cv/CV-Sothearith.pdf";
 
 const roles = [
   "Backend Developer",
-  "Laravel Developer",
   "Spring Boot Learner",
 ];
 
@@ -73,7 +72,7 @@ const Section = () => {
           <div className="flex gap-4 mt-8 flex-wrap">
             {/* Download CV */}
             <Motion.a
-              // href={cvFile}
+              href={cvFile}
               download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -84,7 +83,7 @@ const Section = () => {
 
             {/* View Projects */}
             <Motion.a
-              // href="#projects"
+              href="/projects"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-6 py-3 rounded-xl border border-purple-500 text-purple-400 font-semibold hover:bg-purple-500/10"

@@ -1,0 +1,20 @@
+/* Glass card */
+.glass-card {
+  @apply border border-cyan-400/40 rounded-2xl p-10 text-center text-white 
+         bg-white/5 backdrop-blur-xl shadow-[0_0_40px_rgba(34,211,238,0.1)];
+}
+
+.icon-box {
+  @apply bg-gradient-to-br from-indigo-500 to-blue-500 
+         p-4 rounded-xl text-2xl inline-flex mb-4;
+}
+
+.link {
+  @apply underline hover:text-cyan-300 transition;
+}
+
+.input {
+  @apply bg-transparent border border-cyan-400/40 rounded-xl px-4 py-4 
+         text-white placeholder-gray-400
+         focus:outline-none focus:ring-2 focus:ring-cyan-400/40 transition;
+}

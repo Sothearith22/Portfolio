@@ -1,6 +1,8 @@
 import React from "react";
 
 const ProjectCard = ({ project }) => {
+  const techStack = Array.isArray(project?.tech) ? project.tech : [];
+
   return (
     <div className="group bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
 
@@ -28,7 +30,7 @@ const ProjectCard = ({ project }) => {
 
         {/* Tech Stack */}
         <div className="flex flex-wrap gap-2 mb-6">
-          {project.tech.map((item, index) => (
+          {techStack.map((item, index) => (
             <span
               key={index}
               className="text-xs bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20"
