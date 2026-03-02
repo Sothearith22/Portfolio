@@ -1,34 +1,38 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const ProjectCard = ({ project }) => {
   const techStack = Array.isArray(project?.tech) ? project.tech : [];
 
   return (
-    <div className="group bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
-
+    <motion.div
+      layout
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.9 }}
+      transition={{ duration: 0.3 }}
+      whileHover={{ y: -6 }}
+      className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl"
+    >
       {/* Image */}
       {project.image && (
-        <div className="overflow-hidden">
-          <img
-            src={project.image}
-            alt={project.title}
-            className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-110"
-          />
-        </div>
+        <img
+          src={project.image}
+          alt={project.title}
+          className="h-48 w-full object-cover"
+        />
       )}
 
       <div className="p-6">
-        {/* Title */}
         <h3 className="text-xl font-semibold text-white mb-3">
           {project.title}
         </h3>
 
-        {/* Description */}
-        <p className="text-gray-400 mb-4 text-sm leading-relaxed">
+        <p className="text-gray-400 mb-4 text-sm">
           {project.description}
         </p>
 
-        {/* Tech Stack */}
+        {/* Tech */}
         <div className="flex flex-wrap gap-2 mb-6">
           {techStack.map((item, index) => (
             <span
@@ -65,7 +69,7 @@ const ProjectCard = ({ project }) => {
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

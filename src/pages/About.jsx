@@ -6,44 +6,64 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative min-h-screen overflow-hidden bg-gradient-to-br from-[#0b0d1c] via-[#111827] to-[#0b0d1c] py-24 px-6 flex items-center"
+      className="
+        relative
+        min-h-screen
+        scroll-mt-20
+        bg-[#0b0d1c]
+        py-20
+        px-5
+        flex
+        items-center
+      "
     >
-      {/* Glow Background */}
-      <div className="absolute -top-40 -left-40 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl"></div>
-      <div className="absolute top-1/3 -right-40 w-96 h-96 bg-pink-500/20 rounded-full blur-3xl"></div>
+      <div className="max-w-5xl mx-auto w-full">
 
-      <div className="relative max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
-
-        {/* Profile Image */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6 }}
+        {/* Title */}
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="flex justify-center"
+          className="text-3xl sm:text-4xl font-bold text-white mb-10 text-center"
         >
-          <div className="p-1 rounded-3xl bg-gradient-to-r from-purple-500 to-pink-500">
+          About <span className="text-purple-400">Me</span>
+        </motion.h2>
+
+        {/* Content */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+          {/* Image */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="flex justify-center"
+          >
             <img
               src={profileImg}
               alt="Profile"
-              className="w-64 h-64 object-cover rounded-3xl bg-[#0b0d1c]"
+              className="
+                w-40 h-40
+                sm:w-48 sm:h-48
+                md:w-56 md:h-56
+                object-cover
+                rounded-xl
+                border-2 border-purple-500
+              "
             />
-          </div>
-        </motion.div>
+          </motion.div>
 
-        {/* Content */}
+          {/* Text */}
+          {/* Content */}
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-white">
-            About{" "}
-            <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-400 bg-clip-text text-transparent">
-              Me
-            </span>
-          </h2>
+         
 
           <p className="text-gray-300 text-lg leading-relaxed mb-6">
             I’m <span className="text-white font-semibold">Sothearith</span>, a
@@ -93,6 +113,7 @@ const About = () => {
             ))}
           </div>
         </motion.div>
+        </div>
       </div>
     </section>
   );

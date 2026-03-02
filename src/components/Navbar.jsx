@@ -19,7 +19,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <h1 className="text-xl font-bold text-white">
-          <span className="text-pink-500">Rith</span>DEV
+          <span className="text-pink-500">Portfolio</span>
         </h1>
 
         {/* Desktop Menu */}
