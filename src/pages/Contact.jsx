@@ -66,7 +66,7 @@ const Contact = () => {
                 <FaGithub />
               </div>
               <a
-                href="https://github.com/RithCoding"
+                href="https://github.com/Sothearith22"
                 target="_blank"
                 rel="noreferrer"
                 className="link"

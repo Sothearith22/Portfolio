@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { motion as Motion } from "framer-motion";
+import { motion, motion as Motion } from "framer-motion";
 import profileImg from "../assets/images/profile.jpg";
 import cvFile from "../assets/cv/CV-Sothearith.pdf";
+import { Link } from "react-router-dom";
+
+const MotionLink = motion(Link);
 
 const roles = [
   "Backend Developer",
@@ -54,7 +57,7 @@ const Section = () => {
           transition={{ duration: 0.8 }}
           className="text-white"
         >
-          <p className="text-purple-400 mb-3">I'm Sothearith</p>
+          <p className="text-purple-400 text-2xl mb-3">I'm Sothearith</p>
 
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
             <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-indigo-400 bg-clip-text text-transparent">
@@ -65,7 +68,7 @@ const Section = () => {
 
           <p className="text-gray-400 mt-5 max-w-lg">
             I’m passionate about learning new things and growing in web development .
-             I enjoy building modern websites and improving my skills through real projects.
+            I enjoy building modern websites and improving my skills through real projects.
           </p>
 
           {/* BUTTONS */}
@@ -82,14 +85,15 @@ const Section = () => {
             </Motion.a>
 
             {/* View Projects */}
-            <Motion.a
-              href="/projects"
+            <MotionLink
+              to="/projects"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-6 py-3 rounded-xl border border-purple-500 text-purple-400 font-semibold hover:bg-purple-500/10"
             >
               View Projects
-            </Motion.a>
+            </MotionLink>
+
           </div>
 
           {/* STATS */}
@@ -132,7 +136,7 @@ const Section = () => {
 
       </div>
     </section>
-  );  
+  );
 };
 
 export default Section;

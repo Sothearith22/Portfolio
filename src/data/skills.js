@@ -30,9 +30,9 @@ const skills = [
         title: "Programming",
         skills: [
             { name: "C++", icon: SiCplusplus, level: 75, color: "text-sky-400" },
-            { name: "C", icon: SiC, level: 90, color: "text-blue-500" },
+            { name: "C", icon: SiC, level: 70, color: "text-blue-500" },
             { name: "Java", icon: FaJava, level: 70, color: "text-orange-500" },
-            { name: "Python", icon: FaPython, level: 65, color: "text-yellow-200" }
+            { name: "Python", icon: FaPython, level: 55, color: "text-yellow-200" }
         ]
     },
     {
@@ -41,7 +41,7 @@ const skills = [
             { name: "HTML", icon: FaHtml5, level: 90, color: "text-orange-500" },
             { name: "CSS", icon: FaCss3Alt, level: 85, color: "text-blue-500" },
             { name: "Bootstrap", icon: FaBootstrap, level: 80, color: "text-purple-600" },
-            { name: "Tailwind", icon: SiTailwindcss, level: 75, color: "text-cyan-400" },
+            { name: "Tailwind", icon: SiTailwindcss, level: 65, color: "text-cyan-400" },
             { name: "JavaScript", icon: SiJavascript, level: 60, color: "text-yellow-400" },
             { name: "TypeScript", icon: SiTypescript, level: 60, color: "text-blue-600" },
             { name: "React", icon: FaReact, level: 60, color: "text-cyan-400" },
@@ -64,8 +64,8 @@ const skills = [
         title: "Tools",
         skills: [
             { name: "Git", icon: FaGitAlt, level: 80, color: "text-orange-600" },
-            { name: "XAMPP", icon: SiXampp, level: 85, color: "text-orange-500" },
             { name: "GitHub", icon: SiGithub, level: 70, color: "text-black" },
+            { name: "XAMPP", icon: SiXampp, level: 85, color: "text-orange-500" },
             { name: "Docker", icon: FaDocker, level: 65, color: "text-sky-500" }
         ],
     },
