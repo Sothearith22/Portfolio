@@ -53,20 +53,20 @@ const skills = [
         skills: [
             { name: "PHP", icon: FaPhp, level: 65, color: "text-indigo-500" },
             { name: "Laravel", icon: FaLaravel, level: 60, color: "text-red-500" },
-            { name: "Spring", icon: SiSpring, level: 50, color: "text-green-600" },
-            { name: "MySQL", icon: SiMysql, level: 75, color: "text-blue-500" },
-            { name: "PostgreSQL", icon: SiPostgresql, level: 70, color: "text-blue-400" },
-            {name: "MySQL Workbench", icon: SiMysql, level: 75, color: "text-blue-600",}
+            { name: "Spring", icon: SiSpring, level: 10, color: "text-green-600" },
+            { name: "MySQL", icon: SiMysql, level: 65, color: "text-blue-500" },
+            { name: "PostgreSQL", icon: SiPostgresql, level: 65, color: "text-blue-400" },
+            {name: "MySQL Workbench", icon: SiMysql, level: 65, color: "text-blue-600",}
 
         ],
     },
     {
         title: "Tools",
         skills: [
-            { name: "Git", icon: FaGitAlt, level: 80, color: "text-orange-600" },
+            { name: "Git", icon: FaGitAlt, level: 70, color: "text-orange-600" },
             { name: "GitHub", icon: SiGithub, level: 70, color: "text-black" },
             { name: "XAMPP", icon: SiXampp, level: 85, color: "text-orange-500" },
-            { name: "Docker", icon: FaDocker, level: 65, color: "text-sky-500" }
+            { name: "Docker", icon: FaDocker, level: 50, color: "text-sky-500" }
         ],
     },
 ];
