@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import profileImg from "../assets/images/profile.jpg";
+import Footer from "../components/Footer";
 
 const About = () => {
   return (
@@ -75,7 +76,7 @@ const About = () => {
           <p className="text-gray-300 text-lg leading-relaxed mb-6">
             I work mainly with{" "}
             <span className="text-white font-medium">
-              Laravel, MySQL, REST APIs
+              Spring, Laravel , MySQL, REST APIs
             </span>{" "}
             and also collaborate with frontend technologies like{" "}
             <span className="text-white font-medium">
@@ -115,7 +116,9 @@ const About = () => {
         </motion.div>
         </div>
       </div>
+      
     </section>
+    
   );
 };
 
