@@ -54,10 +54,10 @@ const Contact = () => {
                 <FaEnvelope />
               </div>
               <a
-                href="mailto:kimsothearith20007@gmail.com"
+                href="mailto:kimsothearith2007@gmail.com"
                 className="link"
               >
-                kimsothearith20007@gmail.com
+                kimsothearith2007@gmail.com
               </a>
             </div>
 
